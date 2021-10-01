@@ -1,0 +1,35 @@
+{
+  "name": "phoneless",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "HTTP API interface to Google's libphonenumber",
+  "main": "dist/index.js",
+  "repository": "https://github.com/telostat/phoneless",
+  "author": "Vehbi Sinan Tunalioglu <vst@vsthost.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc --project ./"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "google-libphonenumber": "^3.2.24"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/google-libphonenumber": "^7.4.21",
+    "@types/node": "^16.10.2",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 120
+  }
+}
