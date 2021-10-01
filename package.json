@@ -1,6 +1,6 @@
 {
   "name": "phoneless",
-  "version": "0.0.1-SNAPSHOT",
+  "version": "0.0.1",
   "description": "HTTP API interface to Google's libphonenumber",
   "main": "dist/index.js",
   "repository": "https://github.com/telostat/phoneless",
