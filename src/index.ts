@@ -33,7 +33,7 @@ export function validateEndpoint(req: Request, res: Response): void {
         type: {
           number: phoneUtil.getNumberType(number),
           code: findPhoneNumberType(phoneUtil.getNumberType(number)),
-          text: findPhoneNumberType(phoneUtil.getNumberType(number)).toLowerCase().replace('_', ' '),
+          text: findPhoneNumberType(phoneUtil.getNumberType(number)).toLowerCase().replace(/_/g, ' '),
         },
         input: query,
         formatted: {
